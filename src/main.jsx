@@ -8,11 +8,13 @@ import About from './components/About.jsx'
 import Books from './components/Books.jsx'
 import BookDetails from './components/BookDetails.jsx'
 import LoadingSpinner from './components/LoadingSpinner.jsx'
+import ErrorPage from './components/ErrorPage.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:'/',
